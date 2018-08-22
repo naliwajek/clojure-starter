@@ -12,3 +12,6 @@ down:
 
 ash: down build
 	docker-compose run --rm app ash
+
+repl: down build
+	docker-compose run --service-ports --rm app lein repl
